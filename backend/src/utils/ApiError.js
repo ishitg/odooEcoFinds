@@ -1,23 +1,24 @@
-class ApiError extends Error{
-    constructor(
+class ApiError extends Error {
+    constructor (
         statusCode,
-        message = "Something went wrong", // by default message - although we will override it
-        errors = [], // array for errors
-        stack = ""
+        message="Somthing went wrong",
+        errors= [],
+        stack =""
     ){
-        super(message) // for overriding message
+        super(message)
         this.statusCode = statusCode
         this.data = null
-        this.message = message // override here
-        this.success = false /// for frontend dev
+        this.message = message
+        this.success = false
         this.errors = errors
 
-        if(stack){
-            this.stack = stack // if we have then fill
-        }
-        else{
-            Error.captureStackTrace(this, this.constructor) // to identify which files are problematic
+
+        if (stack){
+            this.stack = stack
+        } else {
+            Error.captureStackTrace(this, this.constructor)
         }
     }
 }
-export {ApiError}
+
+export {ApiError} 
