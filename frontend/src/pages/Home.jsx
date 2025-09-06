@@ -133,13 +133,13 @@ function Home() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#F8F9FA]">
       <Container>
         <div className="py-8 bg-[#F8F9FA]">
           {/* Page Header */}
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Explore All Products</h1>
-            <p className="text-gray-600">Discover our latest collection of tech products</p>
+            <h1 className="text-4xl font-bold text-[#212529] mb-2 font-montserrat">Explore All Products</h1>
+            <p className="text-[#212529] font-inter">Discover our latest collection of eco-friendly products</p>
           </div>
 
           <div className="flex gap-8">
@@ -160,11 +160,11 @@ function Home() {
             <div className="flex-1">
               {/* Sort and Results */}
               <div className="flex justify-between items-center mb-6">
-                <p className="text-gray-600">{sortedProducts.length} products found</p>
+                <p className="text-[#212529] font-inter">{sortedProducts.length} products found</p>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#2E8B57] focus:border-transparent font-inter"
                 >
                   <option value="featured">Sort by Featured</option>
                   <option value="price-low">Price: Low to High</option>
@@ -186,6 +186,16 @@ function Home() {
           </div>
         </div>
       </Container>
+
+      {/* Custom Fonts Styles */}
+      <style jsx>{`
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
+        }
+        .font-inter {
+          font-family: 'Inter', sans-serif;
+        }
+      `}</style>
     </div>
   );
 }

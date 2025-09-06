@@ -100,8 +100,8 @@ function Header() {
 
       {/* Custom Fonts Styles */}
       <style jsx>{`
-        .font-playfair {
-          font-family: 'Playfair Display', serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         .font-inter {
           font-family: 'Inter', sans-serif;

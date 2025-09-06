@@ -213,7 +213,7 @@ const AddProduct = () => {
       <div className="flex-1 py-8 px-4">
         <div className="max-w-2xl mx-auto">
         {/* Page Title */}
-        <h1 className="text-4xl font-bold text-[#212529] mb-8 text-center font-playfair">
+        <h1 className="text-4xl font-bold text-[#212529] mb-8 text-center font-montserrat">
           Add New Product
         </h1>
 
@@ -398,8 +398,8 @@ const AddProduct = () => {
 
       {/* Custom Fonts Styles */}
       <style jsx>{`
-        .font-playfair {
-          font-family: 'Playfair Display', serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         .font-inter {
           font-family: 'Inter', sans-serif;

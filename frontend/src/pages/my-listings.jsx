@@ -215,7 +215,7 @@ const My_Listings = () => {
       return (
         <div>
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-bold text-[#212529] font-playfair">
+            <h1 className="text-3xl font-bold text-[#212529] font-montserrat">
               My Listings
             </h1>
             <button 
@@ -253,7 +253,7 @@ const My_Listings = () => {
     } else {
       return (
         <div>
-          <h1 className="text-3xl font-bold text-[#212529] mb-8 font-playfair">
+          <h1 className="text-3xl font-bold text-[#212529] mb-8 font-montserrat">
             {sidebarLinks.find(link => link.id === activePage)?.label || 'Page'}
           </h1>
           <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
@@ -296,8 +296,8 @@ const My_Listings = () => {
 
       {/* Custom Fonts Styles */}
       <style jsx>{`
-        .font-playfair {
-          font-family: 'Playfair Display', serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         .font-inter {
           font-family: 'Inter', sans-serif;

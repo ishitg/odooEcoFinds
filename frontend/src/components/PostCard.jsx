@@ -83,31 +83,38 @@ function PostCard({
           )}
         </div>
         <div className="p-4">
-          <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 min-h-[3rem]">{title}</h3>
+          <h3 className="font-semibold text-[#212529] mb-2 line-clamp-2 min-h-[3rem] font-inter">{title}</h3>
           {rating && (
             <div className="flex items-center mb-2">
               <div className="flex items-center">
                 {renderStars(rating)}
               </div>
-              {reviews && <span className="ml-2 text-sm text-gray-600">({reviews})</span>}
+              {reviews && <span className="ml-2 text-sm text-gray-600 font-inter">({reviews})</span>}
             </div>
           )}
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <span className="text-lg font-bold text-gray-900">${price}</span>
+              <span className="text-lg font-bold text-[#212529] font-inter">${price}</span>
               {originalPrice && (
-                <span className="text-sm text-gray-500 line-through">${originalPrice}</span>
+                <span className="text-sm text-gray-500 line-through font-inter">${originalPrice}</span>
               )}
             </div>
             <button 
               onClick={handleAddToCart}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm"
+              className="bg-[#2E8B57] text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 text-sm font-inter"
             >
               Add to Cart
             </button>
           </div>
         </div>
       </div>
+
+      {/* Custom Fonts Styles */}
+      <style jsx>{`
+        .font-inter {
+          font-family: 'Inter', sans-serif;
+        }
+      `}</style>
     </Link>
   );
 }
