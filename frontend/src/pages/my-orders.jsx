@@ -123,7 +123,7 @@ const My_Orders = () => {
     if (activePage === 'orders') {
       return (
         <div>
-          <h1 className="text-3xl font-bold text-[#212529] mb-8 font-playfair">
+          <h1 className="text-3xl font-bold text-[#212529] mb-8 font-montserrat">
             My Orders
           </h1>
           <div className="space-y-4">
@@ -134,7 +134,7 @@ const My_Orders = () => {
     } else {
       return (
         <div>
-          <h1 className="text-3xl font-bold text-[#212529] mb-8 font-playfair">
+          <h1 className="text-3xl font-bold text-[#212529] mb-8 font-montserrat">
             {sidebarLinks.find(link => link.id === activePage)?.label || 'Page'}
           </h1>
           <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
@@ -177,8 +177,8 @@ const My_Orders = () => {
 
       {/* Custom Fonts Styles */}
       <style jsx>{`
-        .font-playfair {
-          font-family: 'Playfair Display', serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         .font-inter {
           font-family: 'Inter', sans-serif;
