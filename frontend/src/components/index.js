@@ -10,8 +10,14 @@ import PostForm from "./post-form/PostForm";
 // import RTE from "./RTE";
 import Select from "./Select";
 import Signup from "./Signup";
-import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
+import PostCard from "./PostCard";
+import Sidebar from "./Sidebar";
+import Newsletter from "./Newsletter";
+import CartItem from "./CartItem";
+import CartSummary from "./CartSummary";
+import CouponCode from "./CouponCode";
+
 export {
   Header,
   Footer,
@@ -27,4 +33,9 @@ export {
   Signup,
   PostCard,
   AuthLayout,
+  Sidebar,
+  Newsletter,
+  CartItem,
+  CartSummary,
+  CouponCode,
 };
