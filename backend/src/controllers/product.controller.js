@@ -105,8 +105,6 @@ export const deleteProduct = asyncHandler(async (req, res) => {
 export const getAllProducts = asyncHandler(async (req, res) => {
   const products = await Product.find()
     .populate("owner", "username email")
-    .populate("category", "name");
-
   return res
     .status(200)
     .json(new ApiResponse(200, products, "All products fetched successfully"));
@@ -118,7 +116,6 @@ export const getProductById = asyncHandler(async (req, res) => {
 
   const product = await Product.findById(id)
     .populate("owner", "username email")
-    .populate("category", "name");
 
   if (!product) {
     throw new ApiError(404, "Product not found");

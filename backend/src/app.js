@@ -29,7 +29,7 @@ app.use("/api/products",productRouter);
 import userRouter from "./routes/user.route.js"
 
 //router declarations
-app.use("/api/v1/users", userRouter);
+app.use("/api/users", userRouter);
 
 
 //

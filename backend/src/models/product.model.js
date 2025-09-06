@@ -25,7 +25,6 @@ const productSchema = new mongoose.Schema({
   catgeory:{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Category",
-    required: true,
   },
   owner:{
     type: mongoose.Schema.Types.ObjectId,
