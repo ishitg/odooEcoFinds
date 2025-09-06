@@ -101,7 +101,7 @@ const Product = () => {
           {/* Right Column - Product Details */}
           <div className="w-full">
             {/* Product Name */}
-            <h1 className="text-3xl lg:text-4xl font-bold text-[#212529] mb-4 font-playfair">
+            <h1 className="text-3xl lg:text-4xl font-bold text-[#212529] mb-4 font-montserrat">
               {product.title}
             </h1>
 
@@ -188,7 +188,7 @@ const Product = () => {
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Product Description */}
           <div>
-            <h2 className="text-2xl font-bold text-[#212529] mb-4 font-playfair">
+            <h2 className="text-2xl font-bold text-[#212529] mb-4 font-montserrat">
               Product Description
             </h2>
             <p className="text-gray-700 leading-relaxed font-inter">
@@ -198,7 +198,7 @@ const Product = () => {
 
           {/* Product Highlights */}
           <div>
-            <h2 className="text-2xl font-bold text-[#212529] mb-4 font-playfair">
+            <h2 className="text-2xl font-bold text-[#212529] mb-4 font-montserrat">
               Key Features
             </h2>
             <ul className="space-y-2">
@@ -216,7 +216,7 @@ const Product = () => {
 
         {/* Additional Product Information */}
         <div className="mt-12 bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-          <h2 className="text-xl font-bold text-[#212529] mb-4 font-playfair">
+          <h2 className="text-xl font-bold text-[#212529] mb-4 font-montserrat">
             Product Information
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -238,8 +238,8 @@ const Product = () => {
 
       {/* Custom Fonts Styles */}
       <style jsx>{`
-        .font-playfair {
-          font-family: 'Playfair Display', serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         .font-inter {
           font-family: 'Inter', sans-serif;

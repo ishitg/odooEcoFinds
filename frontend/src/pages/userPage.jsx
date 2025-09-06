@@ -114,7 +114,7 @@ const UserProfilePage = () => {
       {/* Main Content Area */}
       <div className="flex-1 p-6 lg:p-8">
         {/* Header Title */}
-        <h1 className="text-3xl font-semibold text-[#212529] mb-8 font-playfair">
+        <h1 className="text-3xl font-semibold text-[#212529] mb-8 font-montserrat">
           My Profile
         </h1>
 
@@ -223,8 +223,8 @@ const UserProfilePage = () => {
 
       {/* Custom Fonts Styles */}
       <style jsx>{`
-        .font-playfair {
-          font-family: 'Playfair Display', serif;
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         .font-inter {
           font-family: 'Inter', sans-serif;

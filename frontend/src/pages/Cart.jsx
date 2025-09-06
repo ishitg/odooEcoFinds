@@ -57,24 +57,24 @@ function Cart() {
 
   if (cartItems.length === 0) {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-[#F8F9FA]">
         <Container>
           <div className="py-8">
             {/* Back Button */}
             <button
               onClick={handleBackClick}
-              className="flex items-center text-gray-600 hover:text-gray-800 mb-8"
+              className="flex items-center text-[#212529] hover:text-[#2E8B57] mb-8 font-inter transition-colors duration-200"
             >
               ← Back
             </button>
 
             {/* Empty Cart */}
             <div className="text-center py-16">
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">YOUR CART</h1>
-              <p className="text-gray-600 mb-8">Your cart is empty</p>
+              <h1 className="text-4xl font-bold text-[#212529] mb-4 font-montserrat">YOUR CART</h1>
+              <p className="text-[#212529] mb-8 font-inter">Your cart is empty</p>
               <button
                 onClick={() => navigate("/")}
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="bg-[#2E8B57] text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors duration-200 font-inter"
               >
                 Continue Shopping
               </button>
@@ -86,19 +86,19 @@ function Cart() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#F8F9FA]">
       <Container>
         <div className="py-8">
           {/* Back Button */}
           <button
             onClick={handleBackClick}
-            className="flex items-center text-gray-600 hover:text-gray-800 mb-8"
+            className="flex items-center text-[#212529] hover:text-[#2E8B57] mb-8 font-inter transition-colors duration-200"
           >
             ← Back
           </button>
 
           {/* Page Title */}
-          <h1 className="text-3xl font-bold text-gray-900 mb-8">YOUR CART</h1>
+          <h1 className="text-4xl font-bold text-[#212529] mb-8 font-montserrat">YOUR CART</h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Cart Items Section */}
@@ -130,6 +130,16 @@ function Cart() {
           </div>
         </div>
       </Container>
+
+      {/* Custom Fonts Styles */}
+      <style jsx>{`
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
+        }
+        .font-inter {
+          font-family: 'Inter', sans-serif;
+        }
+      `}</style>
     </div>
   );
 }
