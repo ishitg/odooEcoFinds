@@ -31,9 +31,11 @@ const productSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
-  status: String,
-  enum: ["SOLD","UNSOLD"],
-  defult: "UNSOLD",
+status: {
+  type: String,
+  enum: ["SOLD", "UNSOLD"],
+  default: "UNSOLD",
+},
 
 },{timestamps:true});
 
