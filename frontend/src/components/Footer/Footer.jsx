@@ -1,144 +1,73 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../Logo";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <section className="relative overflow-hidden py-10  border border-t-2 border-t-gray-700 border-r-0 bg-gray-950">
-        <div className="relative z-10 mx-auto max-w-7xl px-4">
-          <div className="-m-6 flex flex-wrap">
-            <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-              <div className="flex h-full flex-col justify-between">
-                <div className="mb-4 inline-flex items-center">
-                  <Logo width="100px" className="" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600">
-                    &copy; Copyright 2023. All Rights Reserved by DevUI.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-              <div className="h-full">
-                <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                  Company
-                </h3>
-                <ul>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Features
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Affiliate Program
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Press Kit
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-              <div className="h-full">
-                <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                  Support
-                </h3>
-                <ul>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Account
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Help
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Customer Support
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full p-6 md:w-1/2 lg:w-3/12">
-              <div className="h-full">
-                <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                  Legals
-                </h3>
-                <ul>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Terms &amp; Conditions
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className=" text-base font-medium text-gray-400 hover:text-gray-700"
-                      to="/"
-                    >
-                      Licensing
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <footer className="bg-white border-t border-gray-200 py-8 px-6 mt-auto">
+      <div className="flex items-center justify-between max-w-7xl mx-auto">
+        
+        {/* Left Section - Logo */}
+        <div className="flex-shrink-0">
+          <button
+            onClick={() => navigate("/")}
+            className="text-2xl font-bold text-[#2E8B57] font-permanent-marker hover:text-green-700 transition-colors duration-200"
+          >
+            EcoFinds
+          </button>
         </div>
-      </section>
-    </div>
+
+        {/* Center Section - Footer Links */}
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link
+            to="/about"
+            className="text-[#212529] font-medium font-inter hover:text-[#2E8B57] transition-colors duration-200 relative group"
+          >
+            About Us
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#2E8B57] transition-all duration-200 group-hover:w-full"></span>
+          </Link>
+          <Link
+            to="/contact"
+            className="text-[#212529] font-medium font-inter hover:text-[#2E8B57] transition-colors duration-200 relative group"
+          >
+            Contact
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#2E8B57] transition-all duration-200 group-hover:w-full"></span>
+          </Link>
+          <Link
+            to="/privacy"
+            className="text-[#212529] font-medium font-inter hover:text-[#2E8B57] transition-colors duration-200 relative group"
+          >
+            Privacy Policy
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#2E8B57] transition-all duration-200 group-hover:w-full"></span>
+          </Link>
+          <Link
+            to="/terms"
+            className="text-[#212529] font-medium font-inter hover:text-[#2E8B57] transition-colors duration-200 relative group"
+          >
+            Terms & Conditions
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#2E8B57] transition-all duration-200 group-hover:w-full"></span>
+          </Link>
+        </nav>
+
+        {/* Right Section - Copyright */}
+        <div className="flex items-center">
+          <p className="text-sm text-gray-600 font-inter">
+            © 2025 EcoFinds. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+      {/* Custom Fonts Styles */}
+      <style jsx>{`
+        .font-permanent-marker {
+          font-family: 'Permanent Marker', cursive;
+        }
+        .font-inter {
+          font-family: 'Inter', sans-serif;
+        }
+      `}</style>
+    </footer>
   );
 }
 
